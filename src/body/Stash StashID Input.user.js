@@ -262,7 +262,7 @@ fragment StudioData on Studio {
     });
 
     stash.addEventListener('page:studio:scenes', function () {
-        waitForElementByXpath("//div[contains(@class, 'studio-details')]", async function (xpath, el) {
+        waitForElementByXpath("//div[contains(@class, 'studio-head')]", async function (xpath, el) {
             if (!document.getElementById('studio-stashids')) {
                 const container = document.createElement('div');
                 container.setAttribute('id', 'studio-stashids');
